@@ -179,7 +179,11 @@ curl -i -X POST -H "Content-Type: application/json" -d
 '{"DeviceName": "StreamName",
 "TimeStamp" :"datetime",
 "Description":"Description",
-"Location":{ "Latitude":lat, "Longitude":lng},
+"Location":{
+  "Latitude":lat,
+  "Longitude":lng,
+  "ManuallyCoords":false
+  },
 "Sensor" :[
     {"Name":sensorName,"value":val},
     {"Name":sensorName,"value":val}

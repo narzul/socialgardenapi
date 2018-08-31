@@ -46,7 +46,6 @@ def getNewData(StreamName):
     while streamExists(StreamName):
         data = getLastData(StreamName)
         if lastTimeStamp == 'null':
-            print('init watcher')
             lastTimeStamp = data['TimeStamp']
         elif lastTimeStamp != 'null' and lastTimeStamp != data['TimeStamp']:
             lastTimeStamp = data['TimeStamp']
