@@ -182,7 +182,7 @@ curl -i -X POST -H "Content-Type: application/json" -d
 "Location":{
   "Latitude":lat,
   "Longitude":lng,
-  "ManuallyCoords":false
+  "ManuallyCoords":boolean
   },
 "Sensor" :[
     {"Name":sensorName,"value":val},
